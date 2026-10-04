@@ -10,7 +10,7 @@ import {
   X,
 } from 'lucide-react';
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://mason-lava.onrender.com';
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '/backend/api';
 const emptyProduct = { product_name: '', description: '', price: '', quantity: '' };
 
 async function apiRequest(path, { token, body, ...options } = {}) {
